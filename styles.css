@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roca Two', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #D9F99D;
@@ -27,7 +27,7 @@ header img {
 }
 
 header h1 {
-    font-family: 'Arial Black', sans-serif;
+    font-family: 'Rubik One', sans-serif;
     font-size: 2.5rem;
     color: #EAF64D;
     text-shadow: 1px 1px #333;
@@ -47,6 +47,7 @@ section {
 
 section h2 {
     font-size: 1.8rem;
+    font-family: 'Rubik One', sans-serif;
     margin-bottom: 10px;
 }
 
@@ -66,7 +67,7 @@ section ul li {
 
 /* Call-to-Action Styling */
 .cta {
-    background-color: #F3C0FF;
+    background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
     text-align: center;
     padding: 20px;
     margin: 20px auto;
@@ -76,7 +77,7 @@ section ul li {
 .cta a {
     display: inline-block;
     padding: 10px 20px;
-    background: #4CAF50;
+    background: #FFD700;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -84,7 +85,7 @@ section ul li {
 }
 
 .cta a:hover {
-    background: #45a049;
+    background: #FFC107;
 }
 
 /* Footer Styling */
@@ -95,3 +96,16 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+.about {
+    background-color: #F3F4F6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
