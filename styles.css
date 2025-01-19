@@ -10,20 +10,23 @@ body {
     font-family: 'Roca Two', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #D9F99D;
+    background-color: #f5f5f5;
 }
 
 /* Header Styling */
 header {
-    background: #A9A9F5;
+    background: #4CAF50;
     color: #fff;
-    text-align: center;
+    text-align: left;
     padding: 20px;
+    position: relative;
 }
 
-header img {
+header .logo {
     max-width: 120px;
-    margin-bottom: 15px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
 }
 
 header h1 {
@@ -31,11 +34,13 @@ header h1 {
     font-size: 2.5rem;
     color: #EAF64D;
     text-shadow: 1px 1px #333;
+    text-align: center;
 }
 
 header p {
     font-size: 1.2rem;
     color: #fff;
+    text-align: center;
 }
 
 /* Section Styling */
@@ -49,11 +54,13 @@ section h2 {
     font-size: 1.8rem;
     font-family: 'Rubik One', sans-serif;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 section p {
     font-size: 1rem;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 section ul {
@@ -63,6 +70,21 @@ section ul {
 
 section ul li {
     margin-bottom: 5px;
+}
+
+/* Carousel Styling */
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Call-to-Action Styling */
@@ -95,6 +117,16 @@ footer {
     background: #333;
     color: white;
     margin-top: 20px;
+}
+
+footer .social-media a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer .social-media a:hover {
+    color: #FFC107;
 }
 
 .about {
