@@ -15,129 +15,172 @@ body {
 
 /* Header Styling */
 header {
-    background: #4CAF50;
-    color: #fff;
-    text-align: left;
-    padding: 20px;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
-    max-width: 120px;
-    position: absolute;
-    top: 10px;
-    left: 20px;
+    max-width: 150px;
 }
 
 header h1 {
     font-family: 'Rubik One', sans-serif;
     font-size: 2.5rem;
-    color: #EAF64D;
+    color: #4CAF50;
     text-shadow: 1px 1px #333;
+}
+
+/* Hero Section */
+.hero {
     text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #B5FFFC, #FFDEE9);
+    color: #333;
 }
 
-header p {
-    font-size: 1.2rem;
-    color: #fff;
-    text-align: center;
-}
-
-/* Section Styling */
-section {
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-}
-
-section h2 {
-    font-size: 1.8rem;
+.hero h2 {
     font-family: 'Rubik One', sans-serif;
+    font-size: 2.5rem;
     margin-bottom: 10px;
-    text-align: center;
+    color: #4CAF50;
 }
 
-section p {
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #FFD700;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.hero a:hover {
+    background: #FFC107;
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #F3F4F6;
+}
+
+.about h2 {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
     font-size: 1rem;
-    margin-bottom: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background: #FFEEF1;
     text-align: center;
 }
 
-section ul {
-    list-style-type: disc;
-    padding-left: 20px;
+.services h2 {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
 }
 
-section ul li {
-    margin-bottom: 5px;
+.services ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-/* Carousel Styling */
+.services ul li {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.services ul li h3 {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.services ul li p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Carousel Section */
 .carousel {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #B5FFFC, #FFDEE9);
+    color: #333;
+}
+
+.carousel h2 {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .carousel img {
     max-width: 100%;
-    height: auto;
+    max-height: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
-/* Call-to-Action Styling */
-.cta {
-    background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
-    text-align: center;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 8px;
-}
-
-.cta a {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #FFD700;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.cta a:hover {
-    background: #FFC107;
-}
-
-/* Footer Styling */
+/* Footer */
 footer {
-    text-align: center;
-    padding: 10px;
     background: #333;
     color: white;
-    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
 }
 
 footer .social-media a {
     color: #FFD700;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 footer .social-media a:hover {
     color: #FFC107;
 }
-
-.about {
-    background-color: #F3F4F6;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.about p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
